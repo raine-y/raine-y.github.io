@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
-P {
-    font-family: 'radioCanadaRegular';
+
+
+/* reconnect */
+
+#reconnect {
+    font-family: 'radioCondencedRegular';
 }
