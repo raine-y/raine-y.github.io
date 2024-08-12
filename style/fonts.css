@@ -2,3 +2,7 @@
     font-family: 'radioCanadaRegular';
     src: url('../fonts/Radio_Canada/static/RadioCanada-Regular.ttf')
   }
+  @font-face {
+    font-family: 'radioCondencedRegular';
+    src: url('../fonts/Radio_Canada/static/RadioCanada_Condensed-Regular.ttf');
+  }
