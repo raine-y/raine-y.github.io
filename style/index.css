@@ -1,6 +1,7 @@
 body {  
     margin: 0;
     padding: 0;
+    background-color: #131616;
 }
 
 
@@ -8,5 +9,20 @@ body {
 /* reconnect */
 
 #reconnect {
-    font-family: 'radioCondencedRegular';
+    font-family: 'radioBigRegular';
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: .8rem;
+}
+
+#reconnect > p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
 }

@@ -6,3 +6,8 @@
     font-family: 'radioCondencedRegular';
     src: url('../fonts/Radio_Canada/static/RadioCanada_Condensed-Regular.ttf');
   }
+
+  @font-face {
+    font-family: 'radioBigRegular';
+    src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-Regular.ttf');
+  }
