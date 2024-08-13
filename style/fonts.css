@@ -11,3 +11,13 @@
     font-family: 'radioBigRegular';
     src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-Regular.ttf');
   }
+
+  @font-face {
+    font-family: 'radioCondencedSemi';
+    src: url('../fonts/Radio_Canada/static/RadioCanada_Condensed-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'radioBigSemi';
+    src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-SemiBold.ttf');
+  }

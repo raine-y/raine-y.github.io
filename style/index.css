@@ -1,28 +1,160 @@
+:root {
+    --v-body-background: #131616;
+    --v-popup-color: rgb(243, 243, 238);
+    --v-popup-border: #9c9c9c;
+    --v-popup-highlight: #F8FAED;
+    --v-popup-shadow: #5A5B56;
+    --v-popup-background: #CBC8C1;
+    --v-popup-content: #212119;
+    --v-color-blue:#57828d;
+    --v-color-dark-blue: #30485e;
+    --v-color-light-green:#8eac9b;
+    --v-color-green:#687f78;
+    --v-color-red:rgb(238, 53, 53);
+}
+
 body {  
     margin: 0;
     padding: 0;
-    background-color: #131616;
+    background-color: var(--v-body-background);
 }
-
-
 
 /* reconnect */
 
 #reconnect {
-    font-family: 'radioBigRegular';
+    font-family: 'radioBigSemi';
     background-color: transparent;
     border: 2px solid whitesmoke;
     border-radius: 2px;
+    padding: .8rem;
+    filter: blur(1.25px);
+    animation: shimmer .5s infinite;
     position: absolute;
     top: 50%;  
     left: 50%; 
     transform: translate(-50%, -50%);
-    padding: .8rem;
+}
+
+#reconnect:hover {
+    filter: blur(1px);
+    cursor: pointer;
+    animation: none;
 }
 
 #reconnect > p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin: 0;
     padding: 0;
     color: whitesmoke;
 }
+
+  @keyframes shimmer {
+    0% {
+        text-shadow:2px 1px var(--v-color-blue),1px -3px grey;
+        transform:translate(-.4px,.4px) translate3D(-50%,-50%,0) rotate(-.1deg);
+        cursor:pointer
+      }
+      25% {
+        text-shadow:-2px -3px var(--v-color-blue),-4px 1px grey;
+        transform:translate(.8px,.4px) translate3D(-50%,-50%,0) rotate(-.1deg);
+        cursor:pointer
+      }
+      50% {
+        text-shadow:2px -1px var(--v-color-light-green),-1px -1px grey;
+        transform:translate(-.8px,.4px) translate3D(-50%,-50%,0) rotate(-.1deg);
+        cursor:help
+      }
+      75% {
+        text-shadow:-4px -1px var(--v-color-green),1px -1px var(--v-color-red);
+        transform:translate(1.2px,.4px) translate3D(-50%,-50%,0) rotate(-.1deg);
+        cursor:help
+      }
+      to {
+        text-shadow:-2px 0 var(--v-color-blue),0px -3px grey;
+        transform:translate(-.8px) translate3D(-50%,-50%,0) rotate(-.1deg);
+        cursor:pointer
+      }
+  }
+
+  /* boot-text */
+
+  #boot-text {
+    z-index: 1;
+    margin-left:16px;
+    margin-top: 20px;
+    cursor: default;
+    filter: blur(.8px);
+}
+
+#boot-text > p {
+    font-size: 18px;
+    color: rgba(236, 236, 228, 0.1);
+    font-family: 'radioCondencedRegular';
+    line-height: 1.8;
+}
+
+#boot-text > .glitch-me{
+
+    margin-top: -18px;
+
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  #boot-text > .glitch-me:before,
+  #boot-text > .glitch-me:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  #boot-text > .glitch-me:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  #boot-text > .glitch-me:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+  .radio-con {
+    font-family: 'radioBigSemi';
+  }
