@@ -29,5 +29,10 @@
 
   @font-face {
     font-family: 'wittgensteinRegular';
-    src: url('c../fonts/Wittgenstein/static/Wittgenstein-Regular.ttf');
+    src: url('../fonts/Wittgenstein/static/Wittgenstein-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'inconsolataRegular';
+    src: url('../fonts/Inconsolata/static/Inconsolata-Regular.ttf');
   }
