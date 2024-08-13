@@ -21,3 +21,13 @@
     font-family: 'radioBigSemi';
     src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-SemiBold.ttf');
   }
+
+  @font-face {
+    font-family: 'zCool';
+    src: url('../fonts/ZCOOL_XiaoWei/ZCOOLXiaoWei-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'wittgensteinRegular';
+    src: url('c../fonts/Wittgenstein/static/Wittgenstein-Regular.ttf');
+  }
