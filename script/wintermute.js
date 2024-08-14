@@ -9,5 +9,6 @@ function wintermute() {
     wait(1825).then(() => document.getElementById('connected').style ='display: inline');
     wait(1850).then(() => document.getElementById('connected').style ='display: none');
     wait(1875).then(() => document.getElementById('connected').style ='display: inline');
+    wait(2675).then(() => window.location.reload()); /* allows back arrow to not display connected */
     wait(2675).then(() => window.location = "desktop.html");
 }

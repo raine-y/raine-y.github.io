@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--v-body-background);
+}
+
+:root {
+    --v-black: black;
+    --v-body-background: #111414;
+    --v-text-white: whitesmoke;
+    --v-text-grey: rgba(236, 236, 228, 0.1);
+    --v-color-grey: grey;
+    --v-color-blue: #57828d;
+    --v-color-dark-blue: #30485e;
+    --v-color-light-green: #8eac9b;
+    --v-color-green: #687f78;
+    --v-color-red: rgb(238, 53, 53);
+  
+    /* POPUPS */
+  
+    --v-popup-color: rgb(243, 243, 238);
+    --v-popup-border: #9c9c9c;
+    --v-popup-highlight: #f8faed;
+    --v-popup-shadow: #5a5b56;
+    --v-popup-background: #cbc8c1;
+    --v-popup-content: #212119;
+  }
