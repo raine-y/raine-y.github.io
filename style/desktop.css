@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--v-body-background);
+    background-color: var(--v-black);
     background-image: url('../asset/the-sky.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
     --v-color-dark-blue: #30485e;
     --v-color-light-green: #8eac9b;
     --v-color-green: #687f78;
-    --v-color-green-2: #718982;
+    --v-color-green-2: #758f87;
     --v-color-red: rgb(238, 53, 53);
   
     /* POPUPS */
@@ -69,6 +69,13 @@ body {
   /* Side Text */
   /* ~~~~~~~~~ */
 
+#leftBar {
+    width: 100%;
+    background-color: var(--v-text-white);
+    height: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
 #sideText {
     margin-left: 16px;
     margin-top: 20px;
@@ -77,6 +84,12 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    display: flex;
+    flex-direction: column;
+    width: 330.4px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap:break-word;
 }
 
 #sideText > pre, p {
