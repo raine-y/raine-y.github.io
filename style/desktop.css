@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--v-body-background);
+    background-image: url('../asset/the-sky.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 :root {
@@ -14,6 +17,7 @@ body {
     --v-color-dark-blue: #30485e;
     --v-color-light-green: #8eac9b;
     --v-color-green: #687f78;
+    --v-color-green-2: #718982;
     --v-color-red: rgb(238, 53, 53);
   
     /* POPUPS */
@@ -31,13 +35,14 @@ body {
   /* ~~~~~~~~~~~ */
 
   #blackTop {
+    filter: blur(4px);
     background-color: var(--v-black);
     position: absolute;
     top: 0;
     height: 50vh;
     width: 100vw;
     z-index: 100;
-    animation: fallaway .5s forwards;
+    animation: fallaway .45s cubic-bezier(0.935, 0.285, 0.945, 0.690) forwards;
   }
 
   @keyframes fallaway {
@@ -50,6 +55,7 @@ body {
   }
 
   #blackBottom {
+    filter: blur(4px);
     background-color: var(--v-black);
     position: absolute;
     bottom: 0;
@@ -58,3 +64,57 @@ body {
     z-index: 100;
     animation: fallaway .5s forwards;
   }
+
+  /* ~~~~~~~~~ */
+  /* Side Text */
+  /* ~~~~~~~~~ */
+
+#sideText {
+    margin-left: 16px;
+    margin-top: 20px;
+    cursor: default;
+    filter: blur(0.6px);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sideText > pre, p {
+    color: var(--v-text-white);
+    font-family: "inconsolataCondencedBlack";
+    line-height: 1.1;
+    opacity: .9;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+#sideText > p {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+#greenGlitch {
+    color: var(--v-color-green);
+    animation: greenstutter .6s infinite;
+}
+
+@keyframes greenstutter {
+    0% {
+        color: var(--v-color-green);
+    }
+    20% {
+        color: var(--v-color-green-2);
+    }
+    40% {
+        color: var(--v-color-green);
+    }
+    60% {
+        color: var(--v-color-green-2);
+    }
+    80% {
+        color: var(--v-color-green);
+    }
+    100% {
+        color: var(--v-color-green);
+    }
+}

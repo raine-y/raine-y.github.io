@@ -38,6 +38,26 @@
   }
 
   @font-face {
+    font-family: 'inconsolataSemi';
+    src: url('../fonts/Inconsolata/static/Inconsolata-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'inconsolataCondenced';
+    src: url('../fonts/Inconsolata/static/Inconsolata_Condensed-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'inconsolataCondencedSemi';
+    src: url('../fonts/Inconsolata/static/Inconsolata_Condensed-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'inconsolataCondencedBlack';
+    src: url('../fonts/Inconsolata/static/Inconsolata_Condensed-Black.ttf');
+  }
+
+  @font-face {
     font-family: 'radioBigBold';
     src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-Bold.ttf');
   }

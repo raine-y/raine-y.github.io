@@ -45,7 +45,7 @@ body {
 }
 
 #reconnect > p {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
   color: var(--v-text-white);
@@ -145,12 +145,13 @@ body {
 #bootText > p {
   font-size: 18px;
   color: var(--v-text-grey);
-  font-family: "radioCondencedRegular";
+  font-family: "inconsolataCondencedSemi";
   line-height: 1.8;
+  font-size: 1.2rem;
 }
 
-.radioBigSemi {
-  font-family: "radioBigSemi";
+.inconBigBlack {
+  font-family: "inconsolataCondencedBlack";
 }
 
 .chinese {
@@ -284,7 +285,7 @@ body {
 
 .whiteOut {
   animation: whiteBar 2s cubic-bezier(0.935, 0.285, 0.945, 0.690) forwards;
-  filter: blur(1px);
+  filter: blur(2.2px);
   cursor: pointer;
 }
 
@@ -294,7 +295,7 @@ body {
   }
   30% {
     background-color: var(--v-text-white);
-    width: 160px;
+    width: 179px;
   }
   52% {
     background-color: var(--v-text-white);
@@ -354,7 +355,7 @@ body {
   }
   30% {
     background-color: var(--v-text-white);
-    width: 160px;
+    width: 179px;
   }
   52% {
     background-color: var(--v-text-white);
@@ -429,6 +430,7 @@ body {
 }
 
 .blackBar {
+  filter: blur(4px);
   animation: blackBar 2s cubic-bezier(0.935, 0.285, 0.945, 0.690) forwards;
 }
 
@@ -484,7 +486,7 @@ body {
   border: 3px solid var(--v-color-green);
   border-radius: 2px;
   padding: 0.8rem;
-  filter: blur(1px);
+  filter: blur(1.2px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -494,7 +496,7 @@ body {
 }
 
 #connected > p {
-  font-size: 1.35rem;
+  font-size: 1.48rem;
   margin: 0;
   padding: 0;
   color: var(--v-color-light-green);
