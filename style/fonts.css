@@ -36,3 +36,8 @@
     font-family: 'inconsolataRegular';
     src: url('../fonts/Inconsolata/static/Inconsolata-Regular.ttf');
   }
+
+  @font-face {
+    font-family: 'radioBigBold';
+    src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-Bold.ttf');
+  }

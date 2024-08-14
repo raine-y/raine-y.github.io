@@ -6,5 +6,8 @@ function wintermute() {
     document.getElementById('reconnect').className = 'whiteOut';
     document.getElementById('blackOut').className = 'blackBar';
     document.getElementById('blackOut').style = 'display: inline';
-    wait(1825).then(() => window.location = "desktop.html");
+    wait(1825).then(() => document.getElementById('connected').style ='display: inline');
+    wait(1850).then(() => document.getElementById('connected').style ='display: none');
+    wait(1875).then(() => document.getElementById('connected').style ='display: inline');
+    wait(2675).then(() => window.location = "desktop.html");
 }

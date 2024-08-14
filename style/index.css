@@ -166,7 +166,7 @@ body {
 }
 
 .dim {
-  opacity: 0.47;
+  opacity: .5;
 }
 
 #bootText > .glitchMe {
@@ -451,4 +451,30 @@ body {
     opacity: 1;
     height: 100vh;
   }
+}
+
+/* ~~~~~~~~~ */
+/* Connected */
+/* ~~~~~~~~~ */
+
+#connected {
+  font-family: "radioBigBold";
+  background-color: transparent;
+  border: 3px solid var(--v-color-green);
+  border-radius: 2px;
+  padding: 0.8rem;
+  filter: blur(1px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 40;
+  display: none;
+}
+
+#connected > p {
+  font-size: 1.35rem;
+  margin: 0;
+  padding: 0;
+  color: var(--v-color-light-green);
 }
