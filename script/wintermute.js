@@ -6,9 +6,10 @@ function wintermute() {
     document.getElementById('reconnect').className = 'whiteOut';
     document.getElementById('blackOut').className = 'blackBar';
     document.getElementById('blackOut').style = 'display: inline';
-    wait(1825).then(() => document.getElementById('connected').style ='display: inline');
-    wait(1850).then(() => document.getElementById('connected').style ='display: none');
-    wait(1875).then(() => document.getElementById('connected').style ='display: inline');
-    wait(2675).then(() => window.location.reload()); /* allows back arrow to not display connected */
-    wait(2675).then(() => window.location = "desktop.html");
+    wait(1770).then(() => document.getElementById('connected').style ='display: inline');
+    wait(1790).then(() => document.getElementById('connected').style ='display: none');
+    wait(1815).then(() => document.getElementById('connected').style ='display: inline');
+    wait(2605).then(() => document.getElementById('connected').style ='display: none');
+    wait(2632).then(() => window.location.reload()); /* allows back arrow to not display connected */
+    wait(2632).then(() => window.location = "desktop.html");
 }

@@ -25,3 +25,36 @@ body {
     --v-popup-background: #cbc8c1;
     --v-popup-content: #212119;
   }
+
+  /* ~~~~~~~~~~~ */
+  /* Black boxes */
+  /* ~~~~~~~~~~~ */
+
+  #blackTop {
+    background-color: var(--v-black);
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    width: 100vw;
+    z-index: 100;
+    animation: fallaway .5s forwards;
+  }
+
+  @keyframes fallaway {
+    0% {
+        height: 50vh;
+    }
+    100% {
+        height: 0vh;
+    }
+  }
+
+  #blackBottom {
+    background-color: var(--v-black);
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 100vw;
+    z-index: 100;
+    animation: fallaway .5s forwards;
+  }
