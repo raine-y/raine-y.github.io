@@ -166,7 +166,7 @@ body {
 }
 
 .dim {
-  opacity: .5;
+  opacity: .55;
 }
 
 #bootText > .glitchMe {
@@ -433,6 +433,27 @@ body {
 }
 
 @keyframes blackBar {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    height: 61px;
+  }
+  84% {
+    opacity: 1;
+    height: 100vh;
+  }
+  100% {
+    opacity: 1;
+    height: 100vh;
+  }
+}
+
+@-webkit-keyframes blackBar {
   0% {
     opacity: 0;
   }
