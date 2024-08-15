@@ -108,23 +108,74 @@ body {
 
 #greenGlitch {
     color: var(--v-color-green);
-    animation: greenstutter .6s infinite;
+    animation: greenstutter 1.2s infinite;
 }
 
 @keyframes greenstutter {
     0% {
         color: var(--v-color-green);
     }
+    10% {
+        color: var(--v-color-green-2);
+    }
     20% {
+        color: var(--v-color-green);
+    }
+    30% {
         color: var(--v-color-green-2);
     }
     40% {
         color: var(--v-color-green);
     }
+    50% {
+        color: var(--v-color-green);
+    }
     60% {
+        color: var(--v-color-green);
+    }
+    70% {
         color: var(--v-color-green-2);
     }
     80% {
+        color: var(--v-color-green-2);
+    }
+    90% {
+        color: var(--v-color-green);
+    }
+    100% {
+        color: var(--v-color-green);
+    }
+}
+
+@-webkit-keyframes greenstutter {
+    0% {
+        color: var(--v-color-green);
+    }
+    10% {
+        color: var(--v-color-green-2);
+    }
+    20% {
+        color: var(--v-color-green);
+    }
+    30% {
+        color: var(--v-color-green-2);
+    }
+    40% {
+        color: var(--v-color-green);
+    }
+    50% {
+        color: var(--v-color-green);
+    }
+    60% {
+        color: var(--v-color-green);
+    }
+    70% {
+        color: var(--v-color-green-2);
+    }
+    80% {
+        color: var(--v-color-green-2);
+    }
+    90% {
         color: var(--v-color-green);
     }
     100% {
