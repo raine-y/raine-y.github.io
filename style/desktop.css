@@ -69,13 +69,6 @@ body {
   /* Side Text */
   /* ~~~~~~~~~ */
 
-#leftBar {
-    width: 100%;
-    background-color: var(--v-text-white);
-    height: 1.2rem;
-    margin-bottom: 1.2rem;
-}
-
 #sideText {
     margin-left: 16px;
     margin-top: 20px;
@@ -86,24 +79,17 @@ body {
     user-select: none;
     display: flex;
     flex-direction: column;
-    width: 460px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    word-wrap:break-word;
+    border-top: 28px solid white;
+    width: fit-content;
 }
 
-#sideText > pre, p {
+#sideText > pre {
     color: var(--v-text-white);
     font-family: "inconsolataCondencedBlack";
     line-height: 1.1;
     opacity: .9;
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-#sideText > p {
-    margin-top: 1.2rem;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 #greenGlitch {
