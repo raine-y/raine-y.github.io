@@ -80,7 +80,6 @@ body {
     display: flex;
     flex-direction: column;
     border-top: 28px solid white;
-    width: fit-content;
 }
 
 #sideText > pre {
@@ -186,14 +185,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 93vh;
     padding-left: 26px;
     margin-right: 26px;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #blockContent {
-    height: 75%;
+    height: 100%;
     width: 100%;
 }
