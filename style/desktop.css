@@ -86,7 +86,7 @@ body {
     user-select: none;
     display: flex;
     flex-direction: column;
-    width: 330.4px;
+    width: 420.4px;
     overflow-y: scroll;
     overflow-x: hidden;
     word-wrap:break-word;
@@ -182,3 +182,63 @@ body {
         color: var(--v-color-green);
     }
 }
+
+/* ~~~~ */
+/* Body */
+/* ~~~~ */
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ~~~~~~~~~~~ */
+/* right block */
+/* ~~~~~~~~~~~ */
+
+#rightBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    margin-right: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#blockContent {
+    height: 75%;
+    width: 100%;
+}
+ #contentContainer {
+    display: flex;
+    flex-direction: column;
+ }
+
+ #contentNavigation > ul {
+    display: flex;
+    flex-direction: row;
+ }
+
+ li > button {
+    background-color: transparent;
+    border: solid white 2px;
+    cursor:pointer;
+    filter: blur(.6px);
+ }
+
+ .selectedButton {
+    border: solid var(--v-color-green-2) 2px;
+ }
+
+ .selectedButton > p {
+    color: var(--v-color-green-2);
+    filter: blur(0px);
+ }
+
+ li > button > p {
+    font-size: 1.9rem;
+ }
+
+/* ccs + JS display contnt on click, assign clicked class to button to make active display ...
