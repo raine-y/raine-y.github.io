@@ -61,3 +61,8 @@
     font-family: 'radioBigBold';
     src: url('../fonts/Radio_Canada_Big/static/RadioCanadaBig-Bold.ttf');
   }
+
+  @font-face {
+    font-family: 'VT323';
+    src: url('../fonts/VT323/VT323-Regular.ttf');
+  }

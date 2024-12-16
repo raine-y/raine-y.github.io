@@ -89,6 +89,12 @@ body {
     opacity: .9;
     font-size: 1.2rem;
     margin: 0;
+    filter: blur(0.3px);
+}
+
+#importantText {
+    font-size: 1.4rem;
+    filter: blur(0.0px);
 }
 
 #greenGlitch {
@@ -196,7 +202,7 @@ body {
 }
 
 #blockWrapper {
-    min-height: 450px;
+    height: 450px;
     width: 698px;
     background-color: #111414;
     border-top: 28px solid white;
@@ -206,14 +212,55 @@ body {
     border-bottom: 2px solid white;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .navButton {
     background-color: transparent;
-    border: none;    
+    border: none;  
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;  
+    padding-left:20px;
 }
 
-.navButton:hover {
+.navButton > img {
+    height: 110px;
+    width: 110px;
+}
+
+#foreverImg {
+    background-color: transparent;
+    border: none;  
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;  
+    padding-left:20px;
+    width: auto;
+}
+
+#spaceButton {
+    background-color: transparent;
+    border: none;  
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;  
+    padding-left:20px;
+    width: auto;
+}
+
+.navButton > p {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.75rem;
+    font-family: 'VT323';
+}
+
+.navButton:hover, #foreverImg:hover {
     border: 2px dotted white;
     cursor: pointer;
 }
@@ -229,3 +276,4 @@ body {
     width: 698px;
     margin-left: 5px;
 }
+
