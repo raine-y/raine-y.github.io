@@ -3,63 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raine Walker ~ Home</title>
+    <title>Connection Terminated</title>
     <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/fonts.css" />
-    <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
   </head>
+
+  <!-- NOTES -->
+  <!--
+
+    1. Begin creating 2frame animations to sit ovr background color(?)
+
+    2. CONNECTED POPUP
+
+  -->
+
   <body>
-    <div id="sideText">
-      <pre>
-
-***********************
-* usr/raine/home      *
-***********************
-
-The Authenticity of host cant be establishe
-d.
-Active: <span id="greenGlitch">active (running)</span> since Fri 20XX-08-
-XX
-Broadcast message from root@raine-pc:
-
-___________________________________________
-<b> __      _____ _    ___ ___  __  __ ___ 
- \ \    / / __| |  / __/ _ \|  \/  | __|
-  \ \/\/ /| _|| |_| (_| (_) | |\/| | _|
-   \_/\_/ |___|____\___\___/|_|  |_|___|</b>
-
-<span id="importantText"><b>> I'm Raine.</b> Welcome to my <i>home</i>! 
-I am a musician from North Carolina 
-with a parial degree in computer 
-science and a website...</span>
-___________________________________________
-      </pre>
+    <div id="recconectWrapper">
+      <button onclick="wintermute()" id="reconnect" class="shimmer">
+        <p>RECONNECT?</p>
+      </button>
     </div>
-    <div id="rightBlock">
-      <div id="blockWrapper">
-       <a class="navButton" href="music.html">
-        <img src="asset/wav.png">
-        <p>Music</p>
-       </a>
-       <a class="navButton" href="photos.html">
-        <img src="asset/fadedpolaroid.png">
-        <p>Photos</p>
-       </a>
-       <a id="foreverImg" href="https://rainewalker.bandcamp.com" target="_blank">
-        <img src="asset/bandcamp.png">
-       </a>
-       <a class="navButton" href="dead-channel-sky/index.html">
-        <img src="asset/theghost.png">
-        <p>...</p>
-       </a>
-       <a class="navButton" href="about.html">
-        <img src="asset/shitfox.png">
-        <p>About</p>
-       </a>
-       <a id="spaceButton">
-
-       </a>
-      </div>
+    <div id="bootText">
+      <p>
+        Your connection was <span class="inconBigBlack">terminated</span><br />
+        Sep XX 13:46:52: <span class="inconBigBlack">Network is down</span><br />
+        F&#x25AF;_ system diagnostics <br />
+        <span class="norweigan dim"> er du.. bortkommen?</span>
+      </p>
+      <p class="glitchMe">
+        For more informati̸on, ple̷ a̶&#x0455;e̶ -vis&#x25AF;:
+        &#x25AF;ah'&#x25AF;&#x25AF;2 s.&#x25AF;om X<span class="chinese"
+          >也</span
+        >. ._ &#x25AF; &#x25AF;..
+        <span class="chinese dim"> 你不得不离开了。</span> .
+      </p>
+      <p>
+        <span class="english dim"> w ait .</span>
+      </p>
     </div>
+    <div id="blackOut"></div>
+    <button id="connected">
+      <p>CONNECTED.</p>
+    </button>
+    <script src="script/wintermute.js"></script>
   </body>
 </html>
