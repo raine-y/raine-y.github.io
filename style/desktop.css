@@ -35,8 +35,8 @@ body {
   /* ~~~~~~~~~ */
 
 #sideText {
-    margin-left: 16px;
-    margin-top: 20px;
+    left: 16px;
+    top: 20px;
     cursor: default;
     filter: blur(0.4px);
     -webkit-user-select: none;
@@ -45,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     border-top: 28px solid white;
+    position: absolute;
 }
 
 #sideText > pre {
