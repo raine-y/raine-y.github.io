@@ -58,7 +58,7 @@ body {
 }
 
 .shimmer {
-  animation: shimmer 0.5s infinite;
+  animation: shimmer 0.47s infinite;
 }
 
 @keyframes shimmer {

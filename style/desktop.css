@@ -154,20 +154,17 @@ body {
 /* ~~~~~~~~~~~ */
 
 #rightBlock {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
     padding-left: 52px;
     padding-right: 52px;
     margin-right: 10px;
     margin-top: 140px;
-    opacity: .9;
-    justify-content: center;
-    align-items: center;
+    opacity: .94;
 }
 
 #blockWrapper {
+    position: absolute;
     height: 450px;
     width: 698px;
     background-color: #111414;
@@ -203,7 +200,7 @@ body {
 
 #rightHeader {
     width: 100%;
-    height: 30px;
+    height: 29px;
     background-color: white;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -265,6 +262,14 @@ body {
     cursor: pointer;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+/* Right Block Animation */
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+
+.windowMinimize {
+
+}
+
 /* ~~~~~~~~~~~~~~ */
 /* button wrapper */
 /* ~~~~~~~~~~~~~~ */
@@ -277,9 +282,26 @@ body {
     margin-left: 5px;
 }
 
+/* ~~~~~~~~~~~~~~ */
+/* File Structure */
+/* ~~~~~~~~~~~~~~ */
+
+#fileStruct {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.desktopIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ~~~~~~~~~~~ */
-  /* Black boxes */
-  /* ~~~~~~~~~~~ */
+/* Black boxes */
+/* ~~~~~~~~~~~ */
 
   #blackTop {
     filter: blur(4px);
@@ -313,3 +335,4 @@ body {
     animation: fallaway .5s forwards;
     opacity: .98;
   }
+
