@@ -161,6 +161,7 @@ body {
     margin-right: 10px;
     margin-top: 140px;
     opacity: .94;
+    z-index: 20;
 }
 
 #blockWrapper {
@@ -176,6 +177,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr 1fr 1fr;
+    z-index: 20;
 }
 
 .navButton {
@@ -290,6 +292,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    z-index: 1;
 }
 
 .desktopIcon {
@@ -297,6 +303,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "inconsolataCondencedBlack";
+    color: whitesmoke;
+    filter: blur(0.6px);
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.desktopIcon > p, img {
+    z-index: 1;
 }
 
 /* ~~~~~~~~~~~ */
