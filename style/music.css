@@ -1,8 +1,38 @@
 body {
-    margin: 0;
+  margin: 0;
   padding: 0;
   background-color: var(--v-black);
   background-image: url("../asset/the-sky.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+header > a {
+  margin-left: 50px;
+  color: whitesmoke;
+  font-family: "VT323";
+  font-size: 50px;
+  filter: blur(0.6px);
+}
+
+#displayContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+p > i {
+    color: rgb(231, 229, 229);
+  font-family: "wittgensteinRegular";
+  filter: blur(0.5px); 
 }
