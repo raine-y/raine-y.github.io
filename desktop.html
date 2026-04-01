@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,9 +6,9 @@
     <title>Raine Walker ~ Home</title>
     <link rel="stylesheet" href="style/desktop.css" />
     <link rel="stylesheet" href="style/fonts.css" />
-    <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
   </head>
-  <body>
+  <body onload="clock()">
     <div id="sideText">
       <pre>
 
@@ -30,8 +30,8 @@ ____________________________________________
 
 <span id="importantText"><b>> I'm Raine.</b> Welcome to my <i>home</i>! 
 I am an <i>Artist</i> and <i>Programmer</i> from 
-North Carolina with a parial degree 
-in computer science and a website...</span>
+North Carolina with a partial degree 
+in computer science and a website.</span>
 ____________________________________________
       </pre>
     </div>
@@ -39,57 +39,42 @@ ____________________________________________
       <div id="blockWrapper">
         <div id="rightHeader">
           <button onclick="maximizeWindow()" id="maxButton">
-            <p>
-              □
-            </p>
+            <p>□</p>
           </button>
           <button onclick="minimizeWindow()" id="minButton">
-            <p>
-             X
-            </p>
+            <p>X</p>
           </button>
         </div>
-        <a class="navButton" href="about.html">
-          <img src="asset/shitfox.png">
-          <p>About</p>
-         </a>
-         <a class="navButton" href="music.html">
-          <img src="asset/wav.png">
+        <a class="navButton" href="music.html">
+          <img src="asset/wav.png" />
           <p>Music</p>
-         </a>
-       <a id="foreverImg" href="https://rainewalker.bandcamp.com" target="_blank">
-        <img src="asset/bandcamp.png">
-       </a>
-       <a class="navButton" href="dead-channel-sky/index.html">
-        <img src="asset/theghost.png">
-        <p>...</p>
-       </a>
-       <a class="navButton" href="photos.html">
-        <img src="asset/fadedpolaroid.png">
-        <p>Photos</p>
-       </a>
-       <a class="navButton" href="#.html">
-        <img src="asset/#">
-        <p>Contact</p>
-       </a>
-       <!--<a id="spaceButton">
+        </a>
+        <a class="navButton" href="photos.html">
+          <img src="asset/fadedpolaroid.png" />
+          <p>Photos</p>
+        </a>
+        <a class="navButton" href="dead-channel-sky/index.html">
+          <img src="asset/theghost.png" />
+          <p>...</p>
+        </a>
+        <a class="navButton" href="about.html">
+          <img src="asset/shitfox.png" />
+          <p>About</p>
+        </a>
+        <!--<a id="spaceButton">
 
        </a>-->
       </div>
     </div>
-    <div id="fileStruct">
-      <div class="desktopIcon">
-        <img src="asset/folder.png">
-        <p>placeholder</p>
+    <div id="clock">
+      <div id="clockText">
+
       </div>
-    </div>
-    <div id="homeBar" onload="timeFreak()">
-      <!--CURRENT-->
     </div>
     <div id="blackTop"></div>
     <div id="blackBottom"></div>
     <script src="script/window.js"></script>
-    <script src = "script/drag.js" defer> </script>
-      <script src = "clock/drag.js" defer> </script>
+    <script src="script/drag.js" defer></script>
+    <script src="script/clock.js" defer></script>
   </body>
 </html>
