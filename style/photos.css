@@ -1,4 +1,68 @@
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url("../asset/the-sky.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#backButton {
+  margin-top: -5px;
+  margin-left: 50px;
+  color: whitesmoke;
+  font-family: "VT323";
+  font-size: 50px;
+  filter: blur(0.6px);
+}
+
+#imageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: fit-content;
+  justify-content: start;
+  align-items: center;
+}
+
+#carousel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#prevImage,
+#nextImage {
+  flex-shrink: 0;
+  overflow: hidden;
+  opacity: 0.77;
+  filter: blur(0.9);
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+#prevImage img,
+#nextImage img {
+  display: block;
+  width: auto;
+  height: auto;
+  z-index: 10;
+}
+
+.slides img {
+  display: block;
+}
+
+.active-slide > img {
+  z-index: 20;
 }

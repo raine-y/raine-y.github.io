@@ -1,14 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raine Walker ~ Photos</title>
     <link rel="stylesheet" href="style/photos.css" />
     <link rel="stylesheet" href="style/fonts.css" />
-    <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
-</head>
-<body>
-    
-</body>
+    <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a id="backButton" href="desktop.html">←Back</a>
+    </header>
+    <div id="imageContainer">
+      <div id="carouselContainer">
+        <div id="carousel">
+            <div id="prevImage"> 
+            </div>
+            <div class="slides">
+                <img src="https://picsum.photos/350/225" />
+                <img src="https://picsum.photos/350/226" />
+                <img src="https://picsum.photos/350/227" />
+                <img src="https://picsum.photos/350/228" />
+            </div>
+            <div id="nextImage">
+            </div>
+        </div>
+        <div id="carouselNav">
+            <button id="moveLeft"><-</button>
+            <button id="moveRight">-></button>
+        </div>
+      </div>
+      <div id="fileGrid">
+
+      </div>
+    </div>
+  </body>
+  <script src="script/imageCarousel.js" defer></script>
 </html>
