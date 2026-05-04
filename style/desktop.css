@@ -380,3 +380,29 @@ body {
     transform: translateY(4px);
   }
 }
+
+/* ~~~~~~~~~~~~~~~ */
+/* MEDIA QUERIES */
+/* ~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 1070px) {
+  #blockWrapper {
+    top: 60px !important;
+    left: 70px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  #blockWrapper {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #blockWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: fit-content;
+  }
+}
