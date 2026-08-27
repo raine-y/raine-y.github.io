@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--v-black);
+  background-color: black;
   background-image: url("../asset/the-sky.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,4 +42,11 @@ p > i {
     color: rgb(231, 229, 229);
   font-family: "wittgensteinRegular";
   filter: blur(0.5px); 
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    display: flex;
+    flex-direction: column !important;
+  }
 }

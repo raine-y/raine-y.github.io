@@ -374,10 +374,10 @@ body {
 
 @keyframes wave {
   25% {
-    transform: translateY(-4px);
+    transform: translateY(-3.5px);
   }
   75% {
-    transform: translateY(4px);
+    transform: translateY(3.5px);
   }
 }
 
@@ -387,7 +387,7 @@ body {
 
 @media screen and (max-width: 1070px) {
   #blockWrapper {
-    top: 60px !important;
+    top: 70px !important;
     left: 70px;
   }
 }
@@ -406,3 +406,14 @@ body {
     height: fit-content;
   }
 }
+
+/*
+    background-color: #CBC8C1;
+    width: 460px;
+    height: 230px;
+    padding-top: 2px;
+    border-top:solid 3px  #F8FAED;
+    border-left: solid 3px #F8FAED;
+    border-bottom:solid 3px #5A5B56;
+    border-right:solid 3px #5A5B56;
+*/
