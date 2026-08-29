@@ -51,7 +51,7 @@ p > i {
   filter: blur(0.5px);
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 800px) {
   .display_container {
     display: none;
   }
@@ -69,6 +69,10 @@ p > i {
 @media screen and (max-width: 540px) {
   header {
     flex-direction: column;
+  }
+
+  .mobile_display_container {
+    margin-top: 0px;
   }
 
   #back_button {
