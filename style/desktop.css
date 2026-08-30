@@ -450,6 +450,10 @@ body {
     width: 240px;
     height: min-content;
   }
+
+  .nav_button > p {
+    font-size: 2.25rem;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -458,12 +462,15 @@ body {
     flex-direction: column;
     width: 330px;
     height: min-content;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #left_block {
     grid-row: 1;
     grid-column: span 2;
     justify-self: center;
+    margin-left: 0px;
   }
 
   #right_block {
