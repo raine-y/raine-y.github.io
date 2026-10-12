@@ -208,8 +208,12 @@ body {
 }
 
 .nav_button > img {
-  height: 110px;
-  width: 110px;
+  height: 125px;
+  width: 125px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 #right_header {
