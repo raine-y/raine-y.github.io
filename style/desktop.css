@@ -161,6 +161,10 @@ body {
   }
 }
 
+/* ~~~~~~ */
+/* HEADER */
+/* ~~~~~~ */
+
 /* ~~~~~~~~~~~ */
 /* right block */
 /* ~~~~~~~~~~~ */
@@ -173,6 +177,7 @@ body {
   grid-row: 1;
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -458,6 +463,11 @@ body {
   .nav_button > p {
     font-size: 2.25rem;
   }
+
+  .nav_button > img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -468,6 +478,11 @@ body {
     height: min-content;
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .nav_button > img {
+    width: 125px;
+    height: 125px;
   }
 
   #left_block {
