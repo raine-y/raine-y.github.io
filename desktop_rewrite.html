@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style/desktop_rewrite.css" />
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
+    <script src="script/header.js"></script>
+    <script src="script/clock.js"></script>
+    <script src="script/window.js" defer></script>
   </head>
-  <body onload="clock()">
+  <body>
     <div id="introduction_container">
       <pre id="introduction_text">
 
@@ -41,9 +44,14 @@ ____________________________________________
           <!--
         MAKE ROTATE BETWEEN IMAGES
       -->
-          <img id="header_image" src="asset/example.png" />
-          <p id="header_overlay">Jump into <i>mine</i></p>
+          <img id="header_image" src="asset/drawings/placeholder_drawing.jpg" />
+          <p id="header_overlay">jump into <i>mine</i>...</p>
         </a>
+        <script>
+          window.addEventListener("load", () => {
+            offsetText();
+          });
+        </script>
       </header>
       <div id="navigation_container">
         <div id="navigation_header">
@@ -70,7 +78,6 @@ ____________________________________________
       </div>
     </div>
     <div id="blinkie_container">
-      <img src="asset/blinkies/acrobat.gif" />
       <img src="asset/blinkies/2001.gif" />
       <img src="asset/blinkies/farside.gif" />
       <img src="asset/blinkies/firefox.gif" />
@@ -88,10 +95,13 @@ ____________________________________________
     </div>
     <div id="clock">
       <div id="clock_text"></div>
+      <script>
+        window.addEventListener("load", () => {
+          clock();
+        });
+      </script>
     </div>
     <div id="black_top"></div>
     <div id="black_bottom"></div>
-    <script src="script/clock.js" defer></script>
-    <script src="script/window.js"></script>
   </body>
 </html>

@@ -226,30 +226,37 @@ body {
 header {
   position: relative;
   width: 700px;
-  height: min-content;
+  height: 180px;
   border-top: solid 3px hsl(0, 0%, 95%);
   border-left: solid 3px hsl(0, 0%, 95%);
   border-bottom: solid 3px var(--v-popup-border);
   border-right: solid 3px var(--v-popup-border);
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
 }
 
 #header_image {
   display: block;
   width: 100%;
-  height: 100%;
   margin: 0px;
   padding: 0px;
+  object-fit: cover;
+  object-position: center -227px;
 }
 
 #header_overlay {
   font-size: 2rem;
+  font-family: "luxuriousRoman";
   margin: 0px;
   padding: opx;
   position: absolute;
   top: 0;
   left: 0;
+  color: rgb(230, 199, 242);
+  mix-blend-mode: difference;
+  font-weight: bold;
+  filter: blur(0.4px);
 }
 
 /* ~~~~~~~~~~ */
@@ -340,17 +347,18 @@ header {
 /* ~~~~~~ */
 
 #blinkie_container {
-  min-height: 0px;
   grid-row: 3;
   grid-column: span 2;
+  padding: none;
+  margin: none;
   background-color: hsla(197, 9%, 8%, 0.7);
   width: calc(100vw - 6px);
-  height: 100%;
+  height: fit content;
   padding-top: 2px;
-  border-top: solid 3px hsl(0, 0%, 95%);
-  border-left: solid 3px hsl(0, 0%, 95%);
-  border-bottom: solid 3px var(--v-popup-border);
-  border-right: solid 3px var(--v-popup-border);
+  border-top: solid 2px hsl(0, 0%, 95%);
+  border-left: solid 2px hsl(0, 0%, 95%);
+  border-bottom: solid 2px var(--v-popup-border);
+  border-right: solid 2px var(--v-popup-border);
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -360,8 +368,6 @@ header {
 #blinkie_container > img {
   padding: none;
   margin: none;
-  width: 88px;
-  height: 31px;
 }
 
 /* ~~~~~ */
@@ -443,6 +449,7 @@ header {
   opacity: 0.98;
   margin-left: -10px;
   margin-top: -10px;
+  opacity: 0.96;
 }
 
 @keyframes fallaway {
@@ -466,7 +473,8 @@ header {
   animation: fallaway 0.42s cubic-bezier(0.935, 0.285, 0.945, 0.69) forwards;
   opacity: 0.98;
   margin-left: -10px;
-  margin-top: -10px;
+  margin-bottom: -10px;
+  opacity: 0.96;
 }
 
 /* ~~~~~~~~~~~~~ */
