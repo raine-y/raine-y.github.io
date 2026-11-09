@@ -574,14 +574,47 @@ header {
 }
 
 @media screen and (max-width: 664px) {
-  #header_popup {
-    display: none;
+  html,
+  body {
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #introdutction_container {
+    width: 330px;
+  }
+
+  .nav_button > img {
+    width: 125px;
+    height: 125px;
+  }
+
+  #navigation_container {
+    width: 330px;
+  }
+
+  header {
+    width: 330px;
+  }
+
+  #blinkies_container {
   }
 
   header {
     display: block;
   }
 
-  #content_container {
+  #header_popup {
+    display: none;
+  }
+
+  #clock {
+    display: none;
   }
 }
