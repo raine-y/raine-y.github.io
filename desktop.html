@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raine Walker ~ Home</title>
-    <link rel="stylesheet" href="style/desktop.css" />
+    <link rel="stylesheet" href="style/desktop_rewrite.css" />
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
+    <script src="script/header.js"></script>
+    <script src="script/clock.js"></script>
+    <script src="script/window.js" defer></script>
   </head>
-  <body onload="clock()">
-    <div id="left_block">
-      <pre>
+  <body>
+    <div id="introduction_container">
+      <pre id="introduction_text">
 
 ***********************
 * usr/raine/home      *
@@ -35,9 +38,40 @@ in computer science and a website.</span>
 ____________________________________________
       </pre>
     </div>
-    <div id="right_block">
-      <div id="block_wrapper">
-        <div id="right_header">
+    <div id="header_popup">
+      <a href="#">
+        <!--
+        MAKE ROTATE BETWEEN IMAGES
+      -->
+        <img
+          id="header_popup_image"
+          src="asset/drawings/placeholder_drawing.jpg"
+        />
+        <p id="header_overlay">jump into <i>mine</i>...</p>
+      </a>
+      <script>
+        window.addEventListener("load", () => {
+          offsetText();
+        });
+      </script>
+    </div>
+    <div id="content_container">
+      <header>
+        <a href="#">
+          <!--
+        MAKE ROTATE BETWEEN IMAGES
+      -->
+          <img id="header_image" src="asset/drawings/placeholder_drawing.jpg" />
+          <p id="header_overlay">jump into <i>mine</i>...</p>
+        </a>
+        <script>
+          window.addEventListener("load", () => {
+            offsetText();
+          });
+        </script>
+      </header>
+      <div id="navigation_container">
+        <div id="navigation_header">
           <button onclick="minimizeWindow()" id="min_button">
             <p>X</p>
           </button>
@@ -60,9 +94,7 @@ ____________________________________________
         </a>
       </div>
     </div>
-    <div></div>
-    <footer id="blinkie_container">
-      <img src="asset/blinkies/acrobat.gif" />
+    <div id="blinkie_container">
       <img src="asset/blinkies/2001.gif" />
       <img src="asset/blinkies/farside.gif" />
       <img src="asset/blinkies/firefox.gif" />
@@ -77,15 +109,16 @@ ____________________________________________
       <img src="asset/blinkies/a126.gif" />
       <img src="asset/blinkies/dontklick.gif" />
       <img src="asset/blinkies/98.gif" />
-    </footer>
+    </div>
     <div id="clock">
       <div id="clock_text"></div>
+      <script>
+        window.addEventListener("load", () => {
+          clock();
+        });
+      </script>
     </div>
     <div id="black_top"></div>
     <div id="black_bottom"></div>
-    <script src="script/window.js"></script>
-    <script src="script/clock.js" defer></script>
   </body>
 </html>
-
-<!--䲜-->
