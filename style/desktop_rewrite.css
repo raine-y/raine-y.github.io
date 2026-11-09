@@ -590,20 +590,24 @@ header {
     width: 330px;
   }
 
+  #content_container {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
   .nav_button > img {
     width: 125px;
     height: 125px;
   }
 
   #navigation_container {
-    width: 330px;
+    width: 340px;
   }
 
   header {
-    width: 330px;
-  }
-
-  #blinkies_container {
+    width: 320px;
+    height: 145px;
+    margin-bottom: 10px;
   }
 
   header {
