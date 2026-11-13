@@ -2,6 +2,7 @@
   font-family: "radioCanadaRegular";
   src: url("../fonts/Radio_Canada/static/RadioCanada-Regular.ttf");
 }
+
 @font-face {
   font-family: "radioCondencedRegular";
   src: url("../fonts/Radio_Canada/static/RadioCanada_Condensed-Regular.ttf");
@@ -75,4 +76,14 @@
 @font-face {
   font-family: "luxuriousRoman";
   src: url("../fonts/Luxurious_Roman/LuxuriousRoman-Regular.ttf");
+}
+
+@font-face {
+  font-family: "radioCanada";
+  src: url("../fonts/Radio_Canada/RadioCanada-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
 }

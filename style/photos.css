@@ -107,7 +107,7 @@ button {
   top: 20px;
   right: 30px;
   color: var(--v-popup-content);
-  font-size: 34px;
+  font-size: 36px;
   font-family: "radioBigRegular";
   cursor: pointer;
   background-color: var(--v-popup-background);
