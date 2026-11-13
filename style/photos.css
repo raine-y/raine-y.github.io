@@ -1,3 +1,12 @@
+:root {
+  --v-popup-color: rgb(243, 243, 238);
+  --v-popup-border: #9c9c9c;
+  --v-popup-highlight: #f8faed;
+  --v-popup-shadow: #5a5b56;
+  --v-popup-background: #cbc8c1;
+  --v-popup-content: #212119;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,15 +57,70 @@ header {
 
 #image_content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
-  align-items: center;
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 5px;
+  align-items: start;
+  justify-content: top;
   width: 100%;
 }
 
 #image_content > img {
-  max-width: 400px;
+  max-width: 325px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#image_content > img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~ */
+/* Shadowbox */
+/* ~~~~~~~~~ */
+
+#shadowbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#shadowbox.active {
+  display: flex;
+}
+
+#shadowbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: var(--v-popup-content);
+  font-size: 34px;
+  font-family: "radioBigRegular";
+  cursor: pointer;
+  background-color: var(--v-popup-background);
+  border-top: solid var(--v-popup-highlight);
+  border-left: solid var(--v-popup-highlight);
+  border-right: solid var(--v-popup-shadow);
+  border-bottom: solid var(--v-popup-shadow);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button:hover {
+  background-color: var(--v-popup-border);
 }
