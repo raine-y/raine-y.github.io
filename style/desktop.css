@@ -374,6 +374,10 @@ header {
   margin: none;
 }
 
+#dont_click {
+  cursor: pointer;
+}
+
 /* ~~~~~ */
 /* CLOCK */
 /* ~~~~~ */

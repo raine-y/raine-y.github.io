@@ -107,7 +107,25 @@ ____________________________________________
       <img src="asset/blinkies/publicdomain.gif" />
       <img src="asset/blinkies/a104.jpg" />
       <img src="asset/blinkies/a126.gif" />
-      <img src="asset/blinkies/dontklick.gif" />
+      <img src="asset/blinkies/dontklick.gif" id="dont_click" />
+      <script>
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+        const btn = document.getElementById("dont_click");
+        btn.addEventListener("click", () => {
+          runKnock();
+        });
+        async function runKnock() {
+          console.log("Hello?");
+          await sleep(4500);
+          const btn = document.getElementById("#dont_click");
+          const knockAudio = new Audio(
+            "asset/audio/freesound_community-knocking-on-door-6022.mp3",
+          );
+          knockAudio.play();
+          console.log("Are you there?");
+          console.log("Can you hear me?");
+        }
+      </script>
       <img src="asset/blinkies/98.gif" />
     </div>
     <div id="clock">
