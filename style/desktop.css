@@ -353,11 +353,9 @@ header {
 #blinkie_container {
   grid-row: 3;
   grid-column: span 2;
-  padding: none;
-  margin: none;
   background-color: hsla(197, 9%, 8%, 0.7);
   width: calc(100vw - 6px);
-  height: fit content;
+  height: fit-content;
   padding-top: 2px;
   border-top: solid 2.5px hsl(0, 0%, 95%);
   border-left: solid 2.5px hsl(0, 0%, 95%);
@@ -508,7 +506,7 @@ header {
     height: 140x;
   }
 
-  #header_overlay {
+  .header_overlay {
     font-size: 2.175rem;
   }
 

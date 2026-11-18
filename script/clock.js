@@ -1,11 +1,9 @@
 function clock() {
   const clockDisplay = document.getElementById("clock_text");
   const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  m = checkTime(m);
-  clockDisplay.innerHTML = h + ":" + m;
-  setTimeout(startTime, 1000);
+  clockDisplay.textContent =
+    today.getHours() + ":" + checkTime(today.getMinutes());
+  setTimeout(clock, 1000);
 }
 
 function checkTime(i) {
