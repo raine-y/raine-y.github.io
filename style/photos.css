@@ -122,6 +122,10 @@ button {
   text-align: center;
 }
 
+#x {
+  margin-bottom: 40px;
+}
+
 button:hover {
   background-color: var(--v-popup-border);
 }
