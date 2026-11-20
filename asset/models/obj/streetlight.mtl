@@ -1,0 +1,10 @@
+# Made in Blockbench 5.1.5
+newmtl m_8e3b128e-e0b9-151b-ec65-c1e72a9e1dd9
+map_Kd box Tex.png
+newmtl m_c7979d80-23be-c92b-4f72-a6dc01a4b6df
+map_Kd poleTex.png
+newmtl m_6e9d5500-8937-e7d6-988d-01e1bf0cbafe
+map_Kd armTex.png
+newmtl m_6857fb00-65dc-359a-020f-6e2008e23e98
+map_Kd texture.png
+newmtl none
