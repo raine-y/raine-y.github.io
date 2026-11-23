@@ -1,3 +1,7 @@
+:root {
+  --sway-amplitude: 7px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -23,11 +27,23 @@ body {
 
 .snowflake {
   position: absolute;
-  top: -10px;
+  top: -70px;
   aspect-ratio: 1;
   background-color: snow;
-  animation: snowfall 10s linear infinite;
+  animation:
+    snowfall 10s linear infinite,
+    sway 400s ease-in-out infinite;
   z-index: 10;
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    translate: calc(-1 * var(--sway-amplitude)) 0;
+  }
+  50% {
+    translate: var(--sway-amplitude) 0;
+  }
 }
 
 @keyframes snowfall {
@@ -35,15 +51,26 @@ body {
     transform: translateY(0) rotate(0);
   }
   100% {
-    transform: translateY(110vh) rotate(360deg);
+    transform: translateY(110vh);
   }
 }
-@keyframes sway {
-  0%,
-  100% {
-    transform: translateX(calc(-1 * var(--sway-amplitude)));
-  }
-  50% {
-    transform: translateX(var(--sway-amplitude));
-  }
+
+/* ~~~~~~~~~~~ */
+/* Streetlight */
+/* ~~~~~~~~~~~ */
+
+.streetlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 6;
+}
+
+.groundcover {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100vw;
 }
