@@ -63,32 +63,41 @@ body {
 
 @keyframes shimmer {
   0% {
-    text-shadow: 2px 1px var(--v-color-blue), 1px -3px var(--v-color-grey);
+    text-shadow:
+      2px 1px var(--v-color-blue),
+      1px -3px var(--v-color-grey);
     transform: translate(-0.4px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: pointer;
   }
   25% {
-    text-shadow: -2px -3px var(--v-color-blue), -4px 1px var(--v-color-grey);
+    text-shadow:
+      -2px -3px var(--v-color-blue),
+      -4px 1px var(--v-color-grey);
     transform: translate(0.8px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: pointer;
   }
   50% {
-    text-shadow: 2px -1px var(--v-color-light-green),
+    text-shadow:
+      2px -1px var(--v-color-light-green),
       -1px -1px var(--v-color-grey);
     transform: translate(-0.8px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: help;
   }
   75% {
-    text-shadow: -4px -1px var(--v-color-green), 1px -1px var(--v-color-red);
+    text-shadow:
+      -4px -1px var(--v-color-green),
+      1px -1px var(--v-color-red);
     transform: translate(1.2px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: help;
   }
   to {
-    text-shadow: -2px 0 var(--v-color-blue), 0px -3px var(--v-color-grey);
+    text-shadow:
+      -2px 0 var(--v-color-blue),
+      0px -3px var(--v-color-grey);
     transform: translate(-0.8px) translate3D(-50%, -50%, 0) rotate(-0.1deg);
     cursor: pointer;
   }
@@ -96,32 +105,41 @@ body {
 
 @-webkit-keyframes shimmer {
   0% {
-    text-shadow: 2px 1px var(--v-color-blue), 1px -3px var(--v-color-grey);
+    text-shadow:
+      2px 1px var(--v-color-blue),
+      1px -3px var(--v-color-grey);
     transform: translate(-0.4px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: pointer;
   }
   25% {
-    text-shadow: -2px -3px var(--v-color-blue), -4px 1px var(--v-color-grey);
+    text-shadow:
+      -2px -3px var(--v-color-blue),
+      -4px 1px var(--v-color-grey);
     transform: translate(0.8px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: pointer;
   }
   50% {
-    text-shadow: 2px -1px var(--v-color-light-green),
+    text-shadow:
+      2px -1px var(--v-color-light-green),
       -1px -1px var(--v-color-grey);
     transform: translate(-0.8px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: help;
   }
   75% {
-    text-shadow: -4px -1px var(--v-color-green), 1px -1px var(--v-color-red);
+    text-shadow:
+      -4px -1px var(--v-color-green),
+      1px -1px var(--v-color-red);
     transform: translate(1.2px, 0.4px) translate3D(-50%, -50%, 0)
       rotate(-0.1deg);
     cursor: help;
   }
   to {
-    text-shadow: -2px 0 var(--v-color-blue), 0px -3px var(--v-color-grey);
+    text-shadow:
+      -2px 0 var(--v-color-blue),
+      0px -3px var(--v-color-grey);
     transform: translate(-0.8px) translate3D(-50%, -50%, 0) rotate(-0.1deg);
     cursor: pointer;
   }
@@ -167,7 +185,7 @@ body {
 }
 
 .dim {
-  opacity: .55;
+  opacity: 0.55;
 }
 
 #bootText > .glitchMe {
@@ -284,7 +302,7 @@ body {
 /* ~~~~~~~~~ */
 
 .whiteOut {
-  animation: whiteBar 2s cubic-bezier(0.935, 0.285, 0.945, 0.690) forwards;
+  animation: whiteBar 2s cubic-bezier(0.935, 0.285, 0.945, 0.69) forwards;
   filter: blur(2.2px);
   cursor: pointer;
 }
@@ -431,7 +449,7 @@ body {
 
 .blackBar {
   filter: blur(4px);
-  animation: blackBar 2s cubic-bezier(0.935, 0.285, 0.945, 0.690) forwards;
+  animation: blackBar 2s cubic-bezier(0.935, 0.285, 0.945, 0.69) forwards;
 }
 
 @keyframes blackBar {

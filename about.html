@@ -8,34 +8,35 @@
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
     <script src="script/snow.js"></script>
+    <script src="script/shuffle-text.js"></script>
   </head>
+
+  <script>
+    window.addEventListener("load", init);
+
+    function init() {
+      for (const element of document.querySelectorAll(".shuffle")) {
+        const section = element.closest("[data-random-character]");
+        const effect = new ShuffleText(element);
+
+        effect.sourceRandomCharacter =
+          section?.dataset.randomCharacter ?? "░▒▓█";
+        effect.emptyCharacter = section?.dataset.emptyCharacter ?? " ";
+
+        effect.start();
+      }
+    }
+  </script>
+
   <body class="snowfall-animation">
     <script>
       letItSnow();
     </script>
 
-    <div id="test_block"></div>
-
+    <div data-random-character="░▒▓█" id="test_block">
+      <p class="shuffle" id="test_text">This isn't how I rememeber it...</p>
+    </div>
     <img class="streetlight" src="asset/models/streetlight.gif" />
     <img class="groundcover" src="asset/groundcover.png" />
-    <h4
-      id="snow"
-      style="
-        display: none;
-        color: rgb(222, 217, 217);
-        position: absolute;
-        bottom: -1.6rem;
-        width: 100vw;
-        overflow-wrap: anywhere;
-        padding: 0;
-        margin: 0;
-        width: 101vw;
-        line-height: 1;
-        z-index: 5;
-        background-color: rgba(181, 179, 179, 0.8);
-      "
-    >
-      █▓█▒▓▓▒██▓█▒██▓▓████▓█▓▓▓▓█▒▓███▒▓█▓▓▓█▓█▓▒█▓▓█▒█▓██▓▓▓▒▓████▓██▓▓▓█▓▓▓▓█▓▓██▓██▓▓█▓▓▓▓█▓███▓▓▓█▓▓▓█▓▓███▓▓███▓▓█▓█▓██▓▓▓▓██▓██▓█▓██▓▒▓▒███████▓▓█▒█████▓▒█▓▓██▓▒▓██▒▒██▓▓█▓███▓▓█████▒▒██▒▓██▒████▓▓█▓█▒████▒█▓█▓███▓▓██▓█████▓▒▓█▒▓▓█▒██▓██▓▓▓▓██▓██▓████▓▓████▓███▓▓███▓▓█▓▓▒███▓██████▓▓▓██▓▒▓███▓█▓█▓███▓▓█▓▓▓██▓▓██▓▓██▓▓▓▓█▓▓█▓██▓█▓█▒██▓▒████████████▓██▓██▓███▓█▓██▓▓██▒▓█▓▓▓▒███▓▓██████▓█▓██▓█▓███▓█▓█▓▓████▓█▓█▓██████▓█▓████████▓▓█▒███▓██▓██▓██▓▒▒▒██████▓███▓██████▓█████▓█▓▓██▒▓▓█▒▓███▒██▓███▓██▒▓██████████▓██████▓██▓██▒██████▓▓█▓██▓█▒███▓████▓▒▓▓▒██▓██▓▓█▓████████▓▒▓█▓▓███▓███▓█▒███▒█▓▓▓████▓██▓▓█▓███▓██▓█▒██▓██████▓██▓████▓█▓██████▓████▓▓████▓▓█████▓▓█▒██▓███▓█▓██▓▒██▓█████▓██▒█▓███▓████▒████▓▓███▒█▓█▓██▓▓█▓█████████████████▓███▓███▓██▓████▓█▓██▓████████████▓▓█▓████▓████████▒▓██████████▓█████▓█▓███▓██▒████████████▓██████▒█▓██████▓██▓█████▓██████▓█▓▒██████▓█████▓█▓█▓█████▓████▓█▓███▓██▓██▓████▓▓▓████████▓██▓████████████████████████████████▓▓█▓██▓▓█████████▓██▓██████████████████████▓█▓██████▓▓████▓▓█▓████████████▓████████████████████▓█▓▓▒███████▓▓███▓████▓███████████████████▓█████████████████████████████▓█████████▓██▓▓█████████████████████████▓██████▓████████████████████████████████▓█▓█▓██▓██▓███████████████████████████████▓███████████████▓███████████████████████████████████████▓██████████████████▓█████████▓███▓█████████▓█████████████████████████████████████████████████████████████████████████▓██████████████████████████████▓████████████████████████████████████████████████████████████████████████████████████████████████████████
-    </h4>
   </body>
 </html>

@@ -32,7 +32,7 @@ const letItSnow = () => {
   if (!area) return;
 
   const total = getSnowflakeCount();
-  const foregroundCount = 50;
+  const foregroundCount = 38;
   const middlegroundCount = Math.floor((total - foregroundCount) * 0.4);
   const backgroundCount = total - foregroundCount - middlegroundCount;
 
