@@ -1,8 +1,8 @@
 function offsetText() {
-  const overlay = document.getElementById("header_overlay");
-  let topVal = Math.random() * (20 - -1 + 1) + -1;
-  let leftVal = Math.random() * (30 - -5 + 1) + -5;
-  overlay.style.top = `${topVal}px`;
-  overlay.style.left = `${leftVal}px`;
-  overlay.style.overflow = "hidden";
+  document.querySelectorAll(".header_overlay").forEach((overlay) => {
+    const topVal = Math.random() * 22 - 1; // -1 to 21
+    const leftVal = Math.random() * 36 - 5; // -5 to 31
+    overlay.style.top = `${topVal}px`;
+    overlay.style.left = `${leftVal}px`;
+  });
 }

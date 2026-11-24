@@ -248,7 +248,7 @@ header {
   object-position: center -227px;
 }
 
-#header_overlay {
+.header_overlay {
   font-size: 2.25rem;
   font-family: "luxuriousRoman";
   margin: 0px;
