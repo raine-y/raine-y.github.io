@@ -113,3 +113,19 @@ body {
   text-align: left;
   white-space: nowrap;
 }
+
+/* ~~~~~~~~~~ */
+/* Characters */
+/* ~~~~~~~~~~ */
+
+.character {
+  position: absolute;
+  z-index: 9;
+  opacity: 0.96;
+}
+
+.char_one {
+  height: 260px;
+  bottom: 36px;
+  left: 140px;
+}
