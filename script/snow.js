@@ -25,7 +25,7 @@ const createSnowflakes = (area, count, minSize, maxSize, zIndex) => {
   }
 };
 
-const foregroundSnow = (area, count) => createSnowflakes(area, count, 6, 8, 7);
+const foregroundSnow = (area, count) => createSnowflakes(area, count, 6, 7, 7);
 
 const backgroundSnow = (area, count) => createSnowflakes(area, count, 4, 6, 3);
 
