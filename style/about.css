@@ -68,6 +68,8 @@ body {
   margin: auto;
   z-index: 6;
   rotate: 0.6deg;
+  opacity: 0.98;
+  filter: brightness(0.96);
 }
 
 .groundcover {
@@ -77,4 +79,5 @@ body {
   right: auto;
   width: 100vw;
   filter: brightness(0.92);
+  opacity: 0.9;
 }
