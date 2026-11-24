@@ -8,33 +8,14 @@
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
     <script src="script/snow.js"></script>
-    <script src="script/shuffle-text.js"></script>
   </head>
-
-  <script>
-    window.addEventListener("load", init);
-
-    function init() {
-      for (const element of document.querySelectorAll(".shuffle")) {
-        const section = element.closest("[data-random-character]");
-        const effect = new ShuffleText(element);
-
-        effect.sourceRandomCharacter =
-          section?.dataset.randomCharacter ?? "░▒▓█";
-        effect.emptyCharacter = section?.dataset.emptyCharacter ?? " ";
-
-        effect.start();
-      }
-    }
-  </script>
-
   <body class="snowfall-animation">
     <script>
       letItSnow();
     </script>
 
-    <div data-random-character="░▒▓█" id="test_block">
-      <p class="shuffle" id="test_text">This isn't how I rememeber it...</p>
+    <div id="test_block">
+      <p id="test_text">This isn't how I rememeber it...</p>
     </div>
     <img class="streetlight" src="asset/models/streetlight.gif" />
     <img class="groundcover" src="asset/groundcover.png" />
