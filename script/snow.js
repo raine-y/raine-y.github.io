@@ -2,7 +2,7 @@ const getSnowflakeCount = () => {
   const width = window.innerWidth;
   if (width < 768) return 650;
   if (width < 1024) return 850;
-  return 1100;
+  return 1000;
 };
 
 const createSnowflakes = (area, count, minSize, maxSize, zIndex) => {
