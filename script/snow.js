@@ -1,40 +1,44 @@
 const getSnowflakeCount = () => {
-  let width = window.screen.width;
-  if (width < 768) return 700;
-  if (width < 1024) return 900;
-  return 1250;
+  const width = window.innerWidth;
+  if (width < 768) return 650;
+  if (width < 1024) return 850;
+  return 1100;
 };
 
 const createSnowflakes = (area, count, minSize, maxSize, zIndex) => {
+  const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < count; i++) {
     const snowflake = document.createElement("div");
     snowflake.classList.add("snowflake");
-    const randomSize = Math.random() * (maxSize - minSize) + minSize;
-    const randomDuration = Math.random() * 11 + 4;
-    const randomXPosition = Math.random() * 100;
-    const randomDelay = Math.random() * 6;
-    const randomOpacity = Math.random() * 0.3 + 0.6;
-    snowflake.style.left = `${randomXPosition}%`;
-    snowflake.style.animationDuration = `${randomDuration}s`;
-    snowflake.style.width = `${randomSize}px`;
-    snowflake.style.animationDelay = `${randomDelay}s`;
-    snowflake.style.opacity = `${randomOpacity}`;
+
+    const size = Math.random() * (maxSize - minSize) + minSize;
+
+    snowflake.style.left = `${Math.random() * 100}%`;
+    snowflake.style.width = `${size}px`;
+    snowflake.style.animationDuration = `${Math.random() * 11 + 4}s`;
+    snowflake.style.animationDelay = `${Math.random() * 6}s`;
+    snowflake.style.opacity = `${Math.random() * 0.3 + 0.6}`;
     snowflake.style.zIndex = zIndex;
-    snowflake.style.filter = "blur(.6px)";
-    area.appendChild(snowflake);
+
+    fragment.appendChild(snowflake);
   }
+
+  area.appendChild(fragment);
 };
-
-const foregroundSnow = (area, count) => createSnowflakes(area, count, 6, 7, 7);
-
-const backgroundSnow = (area, count) => createSnowflakes(area, count, 4, 6, 3);
 
 const letItSnow = () => {
-  const snowflakeArea = document.querySelector(".snowfall-animation");
-  const total = getSnowflakeCount();
-  const foregroundCount = Math.floor(total / 2) - 200;
-  const backgroundCount = total - foregroundCount + 200;
+  const area = document.querySelector(".snowfall-animation");
+  if (!area) return;
 
-  foregroundSnow(snowflakeArea, foregroundCount);
-  backgroundSnow(snowflakeArea, backgroundCount);
+  const total = getSnowflakeCount();
+  const foregroundCount = 50;
+  const middlegroundCount = Math.floor((total - foregroundCount) * 0.4);
+  const backgroundCount = total - foregroundCount - middlegroundCount;
+
+  createSnowflakes(area, foregroundCount, 6, 8, 10);
+  createSnowflakes(area, middlegroundCount, 5, 7, 7);
+  createSnowflakes(area, backgroundCount, 4, 6, 3);
 };
+
+document.addEventListener("DOMContentLoaded", letItSnow);
