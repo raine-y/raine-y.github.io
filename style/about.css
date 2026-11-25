@@ -122,16 +122,24 @@ body {
   position: absolute;
   z-index: 9;
   opacity: 0.97;
+  filter: brightness(95%);
 }
 
 .char_one {
-  height: 260px;
+  height: 262px;
   bottom: 40px;
   left: 270px;
 }
 
 .char_two {
-  height: 240px;
+  height: 242px;
   bottom: 44px;
   left: 145px;
+}
+
+.the_soul {
+  right: 90px;
+  bottom: 300px;
+  height: 80px;
+  opacity: 0;
 }
