@@ -1,8 +1,9 @@
 const getSnowflakeCount = () => {
   const width = window.innerWidth;
-  if (width < 768) return 650;
-  if (width < 1024) return 850;
-  return 1000;
+  if (width < 525) return 25;
+  if (width < 768) return 400;
+  if (width < 1024) return 600;
+  return 800;
 };
 
 const createSnowflakes = (area, count, minSize, maxSize, zIndex) => {
@@ -32,7 +33,7 @@ const letItSnow = () => {
   if (!area) return;
 
   const total = getSnowflakeCount();
-  const foregroundCount = 100;
+  const foregroundCount = 80;
   const middlegroundCount = Math.floor((total - foregroundCount) * 0.4);
   const backgroundCount = total - foregroundCount - middlegroundCount;
 
