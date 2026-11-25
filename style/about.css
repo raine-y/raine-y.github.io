@@ -77,7 +77,8 @@ body {
   bottom: 0;
   left: auto;
   right: auto;
-  width: 100vw;
+  width: auto;
+  height: 250px;
   filter: brightness(0.93);
   opacity: 0.9;
 }
@@ -111,3 +112,7 @@ body {
   height: 80px;
   opacity: 0;
 }
+
+/* ~~~~~~~~~~~~~ */
+/* Media Queries */
+/* ~~~~~~~~~~~~~ */
