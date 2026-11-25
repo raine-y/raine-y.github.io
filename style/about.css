@@ -2,12 +2,15 @@
   --sway-amplitude: 7px;
 }
 
+html,
 body {
-  margin: 0px;
-  padding: 0px;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  margin: 0px;
+}
+
+body {
   background-color: #111414;
   background-image: url(../asset/the-mountains.png);
   background-size: cover;
