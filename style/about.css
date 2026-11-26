@@ -94,7 +94,7 @@ body {
 .character {
   position: absolute;
   z-index: 9;
-  opacity: 0.97;
+  opacity: 0.98;
   filter: brightness(96%);
 }
 
