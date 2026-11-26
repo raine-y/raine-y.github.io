@@ -72,7 +72,7 @@ body {
   z-index: 6;
   rotate: 0.6deg;
   opacity: 0.98;
-  filter: brightness(0.97);
+  filter: brightness(0.96);
 }
 
 .groundcover {
@@ -82,7 +82,7 @@ body {
   right: auto;
   width: auto;
   height: 250px;
-  filter: brightness(0.93);
+  filter: brightness(0.92);
   opacity: 0.9;
   overflow: hidden;
 }
@@ -95,7 +95,7 @@ body {
   position: absolute;
   z-index: 9;
   opacity: 0.97;
-  filter: brightness(97%);
+  filter: brightness(96%);
 }
 
 .char_one {
@@ -107,7 +107,7 @@ body {
 .char_two {
   height: 242px;
   bottom: 44px;
-  left: 145px;
+  left: 158px;
 }
 
 .the_soul {
